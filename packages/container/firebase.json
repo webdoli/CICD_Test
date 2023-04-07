@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "Webpack MicroService Test",
+    "site": "react-prj-f9edc",
     "public": "dist",
     "ignore": [
       "firebase.json",
