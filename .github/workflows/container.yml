@@ -25,7 +25,7 @@ jobs:
         with:
           args: firebase deploy --only hosting:dev
           entryPoint: ./packages/container/
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYBLOG_V01 }}'
+          repoToken: '${{ secrets.MICRO_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_ACCOUNT_MICRO }}'
           channelId: live
           projectId: react-prj-f9edc
