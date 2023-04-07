@@ -42,7 +42,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to Firebase
-        uses: webdoli/firebase-action@main
+        uses: webdoli/CICD_Test@main
 
         with:
           args: deploy --only hosting
