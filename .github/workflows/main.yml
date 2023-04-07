@@ -28,7 +28,7 @@ jobs:
           path: dist
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          entryPoint: .
+          entryPoint: ./packages/container
           repoToken: '${{ secrets.FIREBASE_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYBLOG_V01 }}'
           channelId: live
