@@ -9,8 +9,7 @@
     ],
     "rewrites": [{
       "source": "/container/latest/**",
-      "dynamicLinks": true,
-      "destination": "/index.html"
+      "dynamicLinks": true
     }]
   }
 }
