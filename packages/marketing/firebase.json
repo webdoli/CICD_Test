@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "site": "react-prj-f9edc",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [{
+      "source": "/marketing/latest/**",
+      "dynamicLinks": true
+    }]
+  }
+}
