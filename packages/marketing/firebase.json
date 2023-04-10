@@ -7,11 +7,7 @@
 
       {
         "source":"/remoteEntry.js",
-        "destination": "/"
-      },
-      {
-        "source": "/marketing/latest/remoteEntry.js",
-        "dynamicLinks": true
+        "destination": "/marketing/latest/remoteEntry.js"
       }
   
     ],
