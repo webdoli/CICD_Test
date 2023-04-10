@@ -6,7 +6,7 @@
     "rewrites": [
 
       {
-        "source":"/remoteEntry.js",
+        "source":"**",
         "destination": "/remoteEntry.js"
       },
       {
