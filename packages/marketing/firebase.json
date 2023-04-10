@@ -6,11 +6,11 @@
     "rewrites": [
 
       {
-        "source":"**",
-        "destination": "/"
+        "source":"/remoteEntry.js",
+        "destination": "/remoteEntry.js"
       },
       {
-        "source": "/marketing/latest/**",
+        "source": "/marketing/latest/remoteEntry.js",
         "dynamicLinks": true
       }
   
