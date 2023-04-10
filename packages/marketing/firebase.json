@@ -1,7 +1,20 @@
 {
   "hosting": {
     "site": "react-prj-f9edc",
+    "appAssociation": "AUTO",
     "public": "dist",
+    "rewrites": [
+
+      {
+        "source":"**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/marketing/latest/**",
+        "dynamicLinks": true
+      }
+  
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
