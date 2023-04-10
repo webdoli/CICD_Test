@@ -2,16 +2,13 @@ const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const packageJson = require('../package.json');
 const commonConfig = require('./webpack.common');
+const path = require('path');
 
 const domain = process.env.PRODUCTION_DOMAIN;
 
 const prodConfig = {
     mode: 'production',
-    output: {
-        filename: '[name].[contenthash].js',
-        publicPath: `${domain}/`,
-        //publicPath: `${domain}/marketing/latest/`,
-    },
+    //entry: './src/index.js',
     plugins: [
         new ModuleFederationPlugin({
             name: 'marketing',
@@ -21,7 +18,19 @@ const prodConfig = {
             },
             shared: packageJson.dependencies
         })
-    ]
+    ],
+    output: {
+        //path: path.resolve('dist' ),
+        filename: '[name].[contenthash].js',
+        publicPath: '/'
+        //publicPath: `/packages/marketing/dist/`,
+        //publicPath: `${domain}/marketing/latest/`,
+    },
+    devServer: {
+
+        historyApiFallback: true
+    
+    }
 }
 
 module.exports = merge( commonConfig, prodConfig )

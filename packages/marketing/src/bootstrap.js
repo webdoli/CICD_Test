@@ -10,6 +10,19 @@ const mount = ( el ) => {
 
 }
 
+console.log('process.env.NODE_ENV= ' + process.env.NODE_ENV );
+// 웹팩 테스트
+if ( process.env.NODE_ENV === 'production' ) {
+
+    const devRoot = document.querySelector('#marketing-dev-root');
+
+    if ( devRoot ) {
+        mount( devRoot );
+    }
+
+}
+
+
 // 개발팀 ID요소
 if ( process.env.NODE_ENV === 'development' ) {
 
