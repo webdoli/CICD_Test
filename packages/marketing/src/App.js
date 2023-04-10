@@ -5,8 +5,6 @@ import { StylesProvider } from '@mui/styles';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Landing from './components/Landing';
 import Pricing from './components/Pricing';
-import Test from './components/Test';
-
 
 export default () => {
 
@@ -15,7 +13,6 @@ export default () => {
 
     return (
         <div>
-            <Test />
             <StylesProvider>
                 <BrowserRouter>
                     <Routes>

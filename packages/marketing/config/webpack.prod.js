@@ -23,11 +23,6 @@ const prodConfig = {
         //path: path.resolve('dist' ),
         filename: '[name].[contenthash].js',
         publicPath: '/'
-    },
-    devServer: {
-
-        historyApiFallback: true
-    
     }
 }
 
