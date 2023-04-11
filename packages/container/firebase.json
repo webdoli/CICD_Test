@@ -8,8 +8,10 @@
       "**/node_modules/**"
     ],
     "rewrites": [{
-      "source": "/container/latest/**",
-      "dynamicLinks": true
+
+      "source": "/container/latest/index.html",
+      "destination": "/"
+
     }]
   }
 }

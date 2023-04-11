@@ -5,12 +5,14 @@ const packageJson = require('../package.json');
 
 const domain = process.env.PRODUCTION_DOMAIN;
 
+console.log('도메인: ' + domain );
+
 const prodConfig = {
 
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
-        publicPath: '/container/latest/'
+        publicPath: '/'
     },
     plugins: [
         new ModuleFederationPlugin({
