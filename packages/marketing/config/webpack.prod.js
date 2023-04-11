@@ -21,7 +21,7 @@ const prodConfig = {
     output: {
         //path: path.resolve('dist' ),
         filename: '[name].[contenthash].js',
-        publicPath: '/'
+        publicPath: 'https://marketing-react-prj-f9edc.web.app/'
     }
 }
 
