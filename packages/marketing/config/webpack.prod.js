@@ -13,7 +13,7 @@ const prodConfig = {
     plugins: [
         new ModuleFederationPlugin({
             name: 'marketing',
-            filename: `${marketDomain}remoteEntry.js`,
+            filename: 'remoteEntry.js',
             exposes: {
                 './MarketingApp': './src/bootstrap'
             },
