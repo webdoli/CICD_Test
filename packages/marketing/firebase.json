@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "react-prj-f9edc",
+    "site": "marketing-react-prj-f9edc",
     "appAssociation": "AUTO",
     "public": "dist",
     "rewrites": [
