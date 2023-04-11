@@ -2,6 +2,8 @@ const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const packageJson = require('../package.json');
 const commonConfig = require('./webpack.common');
+
+const marketDomain = 'https://marketing-react-prj-f9edc.web.app/';
 //const path = require('path');
 //const domain = process.env.PRODUCTION_DOMAIN;
 
@@ -11,7 +13,7 @@ const prodConfig = {
     plugins: [
         new ModuleFederationPlugin({
             name: 'marketing',
-            filename: 'remoteEntry.js',
+            filename: `${marketDomain}remoteEntry.js`,
             exposes: {
                 './MarketingApp': './src/bootstrap'
             },
@@ -21,7 +23,7 @@ const prodConfig = {
     output: {
         //path: path.resolve('dist' ),
         filename: '[name].[contenthash].js',
-        publicPath: 'https://marketing-react-prj-f9edc.web.app/'
+        publicPath: `${marketDomain}`
     }
 }
 
