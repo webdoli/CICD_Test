@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "site": "auth-react-prj-f9edc",
+    "appAssociation": "AUTO",
+    "public": "dist",
+    "rewrites": [
+
+      {
+        "source":"/auth/latest/remoteEntry.js",
+        "destination": "/remoteEntry.js"
+      }
+  
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

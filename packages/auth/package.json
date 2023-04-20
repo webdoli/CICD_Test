@@ -17,6 +17,7 @@
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
+    "firebase-tools": "^11.28.0",
     "history": "^5.3.0",
     "html-webpack-plugin": "^5.5.0",
     "prefix-classnames": "^0.0.7",
