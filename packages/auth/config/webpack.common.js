@@ -11,7 +11,11 @@ module.exports = {
                         plugins: ['@babel/plugin-transform-runtime']
                     }
                 }
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
+            },
         ]
-    },
+    }
 }

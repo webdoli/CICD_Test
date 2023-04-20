@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
     module: {
@@ -13,7 +14,11 @@ module.exports = {
                         plugins: ['@babel/plugin-transform-runtime']
                     }
                 }
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
+            },
         ]
     },
     plugins: [
