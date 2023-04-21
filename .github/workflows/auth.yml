@@ -6,7 +6,7 @@ name: Deploy-auth v1.3
 on:
   push:
     branches:
-      - home-pc
+      - main
 
 defaults:
   run:
