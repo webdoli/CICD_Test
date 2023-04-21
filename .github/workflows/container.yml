@@ -6,7 +6,7 @@ name: Deploy-container v1.3
 on:
   push:
     branches:
-      - main
+      - home-pc
 
 defaults:
   run:

@@ -12,8 +12,8 @@ export default ({ history, onSignIn }) => {
             <h3>Auth Page</h3>
             <BrowserRouter history={ history }>
                 <Routes >
-                    <Route path="/auth/signin" element={ <Signin onSignIn={onSignIn}/>} />
-                    <Route path="/auth/signup" element={ <Signup onSignIn={onSignIn}/> } />
+                    <Route path="/auth/signin/*" element={ <Signin onSignIn={onSignIn}/>} />
+                    <Route path="/auth/signup/*" element={ <Signup onSignIn={onSignIn}/> } />
                 </Routes>
             </BrowserRouter>
         </div>
