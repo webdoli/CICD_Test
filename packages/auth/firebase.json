@@ -1,7 +1,6 @@
 {
   "hosting": {
     "site": "auth-react-prj-f9edc",
-    "appAssociation": "AUTO",
     "public": "dist",
     "rewrites": [
       {
