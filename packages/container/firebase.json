@@ -9,8 +9,8 @@
     ],
     "rewrites": [{
 
-      "source": "/container/latest/index.html",
-      "destination": "/"
+      "source": "/**",
+      "dynamicLinks": true
 
     }]
   }
