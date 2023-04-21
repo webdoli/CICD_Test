@@ -6,6 +6,11 @@
     "rewrites": [
 
       {
+        "source":"/auth/latest/index.html",
+        "destination": "/"
+      },
+
+      {
         "source":"/auth/latest/remoteEntry.js",
         "destination": "/remoteEntry.js"
       }
