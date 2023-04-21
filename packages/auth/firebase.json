@@ -2,10 +2,14 @@
   "hosting": {
     "site": "auth-react-prj-f9edc",
     "public": "dist",
+    "appAssociation": "AUTO",
     "rewrites": [
       {
         "source":"**",
         "destination": "/index.html"
+      },{
+        "source":"/auth/signin/**",
+        "dynamicLinks": true
       }
     ],
     "ignore": [
