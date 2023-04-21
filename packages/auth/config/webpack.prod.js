@@ -23,8 +23,8 @@ const prodConfig = {
     output: {
         //path: path.resolve('dist' ),
         filename: '[name].[contenthash].js',
-        publicPath: `${ authDomain }`
-        
+        //publicPath: `${ authDomain }`
+        publicPath: '/'
     }
 }
 
