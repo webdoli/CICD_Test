@@ -4,6 +4,7 @@ const packageJson = require('../package.json');
 const commonConfig = require('./webpack.common');
 
 const authDomain = 'https://auth-react-prj-f9edc.web.app/';
+
 //const path = require('path');
 //const domain = process.env.PRODUCTION_DOMAIN;
 

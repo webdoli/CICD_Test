@@ -38,7 +38,7 @@ if ( process.env.NODE_ENV === 'production' ) {
     const devRoot = document.querySelector('#auth-dev-root');
 
     if ( devRoot ) {
-        mount( devRoot, {} );
+        mount( devRoot, { defaultHistory: createBrowserHistory() } );
     }
 
 }
