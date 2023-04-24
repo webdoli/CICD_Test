@@ -38,7 +38,7 @@ export default () => {
                     <Routes>
                         <Route path="/*" element={ <MarketingLazy /> } />
                         <Route path="auth/*" element={ <AuthLazy onSignIn={() => setIsSignedIn(true)}/> } />
-                        <Route path="/dashboard" element={ isSignedIn ? <DashboardLazy /> : < Navigate to="/" /> } />
+                        <Route path="/dashboard/*" element={ isSignedIn ? <DashboardLazy /> : < Navigate to="/" /> } />
                     </Routes>
                 </Suspense>
             </div>
