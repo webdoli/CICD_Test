@@ -13,7 +13,6 @@
             "ie 11"
           ]
         }
-      } ],
-      "@babel/preset-react"
+      }]
     ]
   }
