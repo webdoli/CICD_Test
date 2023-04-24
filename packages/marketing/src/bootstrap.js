@@ -39,7 +39,7 @@ if ( process.env.NODE_ENV === 'production' ) {
     const devRoot = document.querySelector('#marketing-dev-root');
 
     if ( devRoot ) {
-        mount( devRoot, {} );
+        mount( devRoot, { defaultHistory: createBrowserHistory() } );
     }
 
 }

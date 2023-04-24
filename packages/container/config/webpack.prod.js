@@ -6,6 +6,7 @@ const packageJson = require('../package.json');
 //const marketDomain = `marketing-${process.env.PRODUCTION_DOMAIN}`;
 const marketingDomain = 'https://marketing-react-prj-f9edc.web.app';
 const authDomain = 'https://auth-react-prj-f9edc.web.app';
+const dashboardDomain = 'https://dashboard-react-prj-f9edc.web.app';
 
 const prodConfig = {
 
@@ -19,7 +20,8 @@ const prodConfig = {
             name: 'container',
             remotes: {
                 marketing: `marketing@${marketingDomain}/remoteEntry.js`,
-                auth: `auth@${authDomain}/remoteEntry.js`
+                auth: `auth@${authDomain}/remoteEntry.js`,
+                dashboard: `dashboard@${dashboardDomain}/remoteEntry.js`
             },
             shared: packageJson.dependencies,
         }),

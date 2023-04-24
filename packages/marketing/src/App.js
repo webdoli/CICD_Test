@@ -16,8 +16,8 @@ export default ({ history }) => {
             <StylesProvider>
                <BrowserRouter history={ history }> 
                     <Routes >
-                        <Route path="/" element={ <ThemeProvider theme={ theme } ><Landing /> </ThemeProvider>} />
-                        <Route path="/pricing" element={ <ThemeProvider theme={ theme } ><Pricing /> </ThemeProvider>} />
+                        <Route path="/*" element={ <ThemeProvider theme={ theme } ><Landing /> </ThemeProvider>} />
+                        <Route path="/pricing/*" element={ <ThemeProvider theme={ theme } ><Pricing /> </ThemeProvider>} />
                     </Routes>
                 </BrowserRouter>
             </StylesProvider>

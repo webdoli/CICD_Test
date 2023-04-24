@@ -4,12 +4,10 @@
     "appAssociation": "AUTO",
     "public": "dist",
     "rewrites": [
-
       {
-        "source":"/marketing/latest/remoteEntry.js",
-        "destination": "/remoteEntry.js"
+        "source":"**",
+        "destination": "/index.html"
       }
-  
     ],
     "ignore": [
       "firebase.json",
