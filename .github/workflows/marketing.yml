@@ -6,7 +6,7 @@ name: Deploy-marketing Ver1.0
 on:
   push:
     branches:
-      - main
+      - home-pc
 
 defaults:
   run:

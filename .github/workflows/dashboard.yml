@@ -6,7 +6,7 @@ name: Deploy-dashboard Ver1.0
 on:
   push:
     branches:
-      - main
+      - home-pc
 
 defaults:
   run:
