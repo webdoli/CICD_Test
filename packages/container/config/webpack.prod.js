@@ -33,9 +33,8 @@ const prodConfig = {
         new CopyPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'public/images/*'),
-                    to: path.resolve(__dirname, 'dist'),
-                    context: 'src',
+                    from: path.resolve('public/images/*'),
+                    to: path.resolve('dist')
                 }
             ]
         })
