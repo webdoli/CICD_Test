@@ -2,6 +2,7 @@ const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const commonConfig = require('./webpack.common');
 const packageJson = require('../package.json');
+const path = require('path');
 
 //const marketDomain = `marketing-${process.env.PRODUCTION_DOMAIN}`;
 const containerDomain = 'https://react-prj-f9edc.web.app';
@@ -15,6 +16,7 @@ const prodConfig = {
     entry: './src/index.js',
     output: {
         filename: '[name].[contenthash].js',
+        path: path.resolve(__dirname, './dist'),
         publicPath: '/'
     },
     plugins: [
