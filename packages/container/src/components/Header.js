@@ -23,7 +23,7 @@ const Header = ({ isSignedIn, onSignOut }) => {
                         {/* Logo & img */}
                         
                         <Link to='/'>
-                            <img src="https://react-prj-f9edc.web.app/images/cghubLogo.jpg" className={ px(' w-24')}/>
+                            <img src="./images/cghubLogo.jpg" className={ px(' w-24')}/>
                         </Link> 
                           
                         
