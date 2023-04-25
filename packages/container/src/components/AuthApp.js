@@ -22,7 +22,7 @@ export default ({ onSignIn }) => {
                 }   
                 
             },
-            onSignIn,
+            onSignIn
         });
 
         history.listen( onParentNavigate );

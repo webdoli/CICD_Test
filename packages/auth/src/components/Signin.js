@@ -5,6 +5,11 @@ import pc from 'prefix-classnames';
 const px = pc('auth-team-ju');
 
 const Signin = ({ onSignIn }) => {
+
+    const onClickFunc =  () => {
+      onSignIn();
+    }
+
     return (
         <div className={px(' flex items-center justify-center min-h-screen bg-white')}>
             
@@ -31,7 +36,7 @@ const Signin = ({ onSignIn }) => {
 
                   <button
                     className={ px(" w-full md:w-auto flex justify-center items-center p-6 space-x-4 font-sans font-bold text-white rounded-md shadow-lg px-9 bg-cyan-700 shadow-cyan-100 hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150")}
-                    onClick={onSignIn}
+                    onClick={onClickFunc}
                   >
                     <span>Next</span>
                     <svg
