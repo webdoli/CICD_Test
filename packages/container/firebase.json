@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "react-prj-f9edc",
-    "public": ".",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
