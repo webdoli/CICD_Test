@@ -3,6 +3,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const commonConfig = require('./webpack.common');
 const packageJson = require('../package.json');
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
 //const marketDomain = `marketing-${process.env.PRODUCTION_DOMAIN}`;
 const containerDomain = 'https://react-prj-f9edc.web.app';
@@ -29,6 +30,15 @@ const prodConfig = {
             },
             shared: packageJson.dependencies,
         }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'public/images/*'),
+                    to: path.resolve(__dirname, 'dist'),
+                    context: 'src',
+                }
+            ]
+        })
     ]
 
 }
