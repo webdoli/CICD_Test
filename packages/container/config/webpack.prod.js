@@ -13,11 +13,11 @@ const dashboardDomain = 'https://dashboard-react-prj-f9edc.web.app';
 const prodConfig = {
 
     mode: 'production',
-    entry: ['./src/index.js', './public/images/cghubLogo.jpg'],
+    entry: './src/index.js',
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve('./dist'),
-        publicPath: '/'
+        publicPath: ''
     },
     plugins: [
         new ModuleFederationPlugin({
