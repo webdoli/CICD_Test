@@ -3,7 +3,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const commonConfig = require('./webpack.common');
 const packageJson = require('../package.json');
 const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
+//const CopyPlugin = require('copy-webpack-plugin');
 
 //const marketDomain = `marketing-${process.env.PRODUCTION_DOMAIN}`;
 const containerDomain = 'https://react-prj-f9edc.web.app';
@@ -29,14 +29,6 @@ const prodConfig = {
                 dashboard: `dashboard@${dashboardDomain}/remoteEntry.js`
             },
             shared: packageJson.dependencies,
-        }),
-        new CopyPlugin({
-            patterns: [
-                {
-                    from: path.resolve('public/images/*'),
-                    to: path.resolve('dist')
-                }
-            ]
         })
     ]
 
