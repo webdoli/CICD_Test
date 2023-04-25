@@ -12,9 +12,10 @@ const dashboardDomain = 'https://dashboard-react-prj-f9edc.web.app';
 const prodConfig = {
 
     mode: 'production',
+    entry: './src/index.js',
     output: {
         filename: '[name].[contenthash].js',
-        publicPath: `${containerDomain}/`
+        publicPath: '/'
     },
     plugins: [
         new ModuleFederationPlugin({
