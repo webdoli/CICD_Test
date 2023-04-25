@@ -5,11 +5,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jpe?g$|\.gif$|\.png$|\.PNG$|\.svg$|\.woff(2)?$|\.ttf$|\.eot$/,
-                loader: 'file-loader',
-                options: {
-                  name: '[name].[ext]'
-                }  
+                test: /\.(png|j?g|svg|gif)?$/,
+                use: 'file-loader?name=./images/[name].[ext]',
             },
             {
                 test: /\.m?js$/,
